@@ -57,6 +57,7 @@ public class CPHInline: CPHInlineBase
     public bool Execute()
     {
         // Get required arg name
+        //grabbing rawInput, which is the text after the command used to trigger the sub-action
         CPH.TryGetArg("rawInput", out string requestedInputName);
 
         // Creating new instance of OBSAudioInput class
